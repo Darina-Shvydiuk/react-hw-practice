@@ -1,16 +1,12 @@
+import { Sidebar } from './Sidebar';
+import { Main } from './Main';
+import { menuConfig } from './Menu';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Sidebar menu={menuConfig}>Logo</Sidebar>
+      <Main></Main>
     </div>
   );
 };
